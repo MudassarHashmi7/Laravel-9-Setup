@@ -1,0 +1,37 @@
+#loader {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    z-index: 10000000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-align: center;
+    vertical-align: middle;
+    padding: 20%;
+    color: blue;
+}
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #40c5fa, #66d1fb, #8cdcfc, #b3e8fd);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #40c5fa, #3ab1e1, #339ec8, #2d8aaf);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}

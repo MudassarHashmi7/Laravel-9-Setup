@@ -49,6 +49,46 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="collapse" id="layouts">
+                        <ul class="navbar-nav ps-3">
+                            <li>
+                                <a href="{{route('roles.index')}}" class="nav-link px-3">
+                      <span class="me-2"
+                      ><i class="bi bi-speedometer2"></i
+                          ></span>
+                                    <span>Role</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{route('users.index')}}" class="nav-link px-3">
+                      <span class="me-2"
+                      ><i class="bi bi-speedometer2"></i
+                          ></span>
+                                    <span>User</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{route('permission.index')}}" class="nav-link px-3">
+                      <span class="me-2"
+                      ><i class="bi bi-speedometer2"></i
+                          ></span>
+                                    <span>Permission</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{route('category.index')}}" class="nav-link px-3">
+                      <span class="me-2"
+                      ><i class="bi bi-speedometer2"></i
+                          ></span>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#" class="nav-link px-3">
@@ -56,6 +96,14 @@
                         <span>Pages</span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{ route('products.index') }}" class="nav-link px-3">
+                        <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+
                 <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
                 <li>
                     <div class="text-muted small fw-bold text-uppercase px-3 mb-3">

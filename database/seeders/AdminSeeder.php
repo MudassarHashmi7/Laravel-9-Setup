@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class DatabaseSeeder extends Seeder
+class AdminSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -20,7 +20,6 @@ class DatabaseSeeder extends Seeder
             'name' =>  'admin',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('admin1234'),
-
         ]);
     }
 }

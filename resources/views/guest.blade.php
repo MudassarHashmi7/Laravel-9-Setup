@@ -1,3 +1,13 @@
+
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <button
@@ -51,7 +61,7 @@
                         <i class="bi bi-person-fill"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="{{route('change-password')}}">Change Password</a></li>
+
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
@@ -70,3 +80,36 @@
         </div>
     </div>
 </nav>
+
+
+
+
+<br><br><br>
+
+<div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Actions</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p><a href="{{ route('guest.show') }}" class="text-decoration-none" style="color: black">User Details</a></p>
+        <p><a href="{{ route('guest.edit') }}" class="text-decoration-none" style="color: black">EDit User</a></p>
+    </div>
+</div>
+
+<!-- Button to open the offcanvas sidebar -->
+&nbsp;<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Dashboard
+</button>
+
+
+<div class="container">
+<div class="alert alert-danger alert-dismissible" style="width: 60%;text-align: center;margin: auto">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Danger!</strong> Access Denied Bro!
+</div>
+</div>
+
+@yield('content')
+</body>
+</html>
